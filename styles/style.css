@@ -73,10 +73,12 @@ div img {
 a {
   color: rgb(175, 175, 175);
   text-decoration: none;
-  word-spacing: 6;
+  word-spacing: 2px;
+}
+a {
+  font-weight: bolder;
 }
 a:hover {
-  font-weight: bolder;
   color: rgb(126, 126, 126);
 }
 
