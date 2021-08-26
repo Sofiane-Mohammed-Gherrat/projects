@@ -1,0 +1,159 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  padding: 50px;
+}
+.container p {
+  margin: 0 0 10px 0;
+  color: hsl(0, 0%, 81%);
+}
+.card3 p,
+.card5 p {
+  color: grey;
+}
+.paragraph {
+  line-height: 1.5;
+}
+.card1 {
+  background-color: hsl(263, 55%, 52%);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-position: 80% 0%;
+  background-repeat: no-repeat;
+  background-size: 120px;
+  color: hsl(0, 0%, 100%);
+}
+.card2 {
+  background-color: hsl(217, 19%, 35%);
+  border: 2px solid hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 100%);
+}
+.card3 {
+  background-color: hsl(0, 0%, 100%);
+}
+.card4 {
+  background-color: hsl(219, 29%, 14%);
+  border: 2px solid hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 100%);
+}
+.card5 {
+  background-color: hsl(0, 0%, 100%);
+}
+.testimonials {
+  padding: 15px 25px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 3px rgba(58, 58, 58, 0.11);
+  display: flex;
+  flex-flow: column;
+}
+div img {
+  border: 2px solid hsl(263, 55%, 52%);
+  border-radius: 100%;
+  margin: 10px 20px 0 0;
+  width: 46px;
+}
+.header h4 {
+  margin: 10px 0;
+}
+.header {
+  display: flex;
+}
+.attribution p,
+a {
+  color: rgb(175, 175, 175);
+  text-decoration: none;
+  word-spacing: 6;
+}
+a:hover {
+  font-weight: bolder;
+  color: rgb(126, 126, 126);
+}
+
+@media screen and (min-width: 576px) {
+  .sub_container,
+  .container_top,
+  .container-bottom {
+    display: flex;
+  }
+  .sub_container {
+    flex-direction: column;
+    /* flex-basis: 75%; */
+  }
+  .container_top {
+    justify-content: space-between;
+    /* flex-basis: 50%; */
+    /* margin-bottom: 10px; */
+  }
+  .container-bottom {
+    justify-content: space-between;
+    /* flex-basis: 50%; */
+  }
+  .card1 {
+    flex-basis: 50%;
+    margin-right: 0px;
+  }
+  .card2 {
+    flex-basis: 31%;
+  }
+  .card3 {
+    flex-basis: 31%;
+    margin-right: 0px;
+  }
+  .card4 {
+    flex-basis: 50%;
+  }
+  .card5 {
+    flex-basis: 20%;
+    /* margin-left: 30px; */
+  }
+}
+@media screen and (min-width: 768px) {
+  .sub_container,
+  .container_top,
+  .container-bottom {
+    display: flex;
+  }
+  .sub_container {
+    flex-direction: column;
+  }
+  .container_top,
+  .container-bottom {
+    justify-content: space-evenly;
+  }
+  .card1 {
+    flex-basis: 50%;
+  }
+  .card2 {
+    flex-basis: 31%;
+  }
+  .card3 {
+    flex-basis: 31%;
+  }
+  .card4 {
+    flex-basis: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    display: flex;
+    max-width: 80%;
+  }
+  .sub_container {
+    flex-basis: 75%;
+  }
+  .card5 {
+    flex-basis: 20%;
+    /* margin-left: 30px; */
+  }
+}
